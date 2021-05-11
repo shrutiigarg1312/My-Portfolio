@@ -1,0 +1,70 @@
+
+.education a{
+    text-decoration: none;
+}
+.curriculum ul {
+    height: 50vh;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.curriculum li{
+    margin-right: 43px;
+    width: 27%;
+}
+.projects-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.box{
+    width:210px;
+	height:360px;
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 15px;
+    background-color: #bd6ff141;
+    margin: 20px 10px;
+    box-shadow: 4px;
+}
+.box p, .box h2{
+color: #52057b;
+}
+.box:hover{
+    background-color: #bd6ff177;
+    transform-style: preserve-3d;
+    transform: scale(1.03);
+    transition: all ease-in-out 0.3s;
+}
+
+.project-img img{
+    width: 180px;
+    height: 130px;
+    border:6px solid #ffffff;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+
+/*---------Mobile View----------------*/
+
+@media only screen and (max-width: 500px) {
+    .curriculum ul {
+        height:max-content;
+        display:flex;
+        flex-direction: column;
+    }
+    .curriculum li{
+        text-align: left;
+        margin-right:0px;
+        width: 100%;
+    }
+
+}
